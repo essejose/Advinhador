@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Adivinhador</string>
+    <string name="imagem_do_adivinho">Imagem do Adivinho</string>
+    <string name="informe">Informe</string>
+    <string name="chutar">Chutar</string>
+    <string name="ltimo_chute">Último Chute</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_default"
+    android:orientation="vertical"
+    tools:context="com.essejose.adivinhador.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/doutor_estranho"
+        android:scaleType="fitEnd"
+        android:contentDescription="@string/imagem_do_adivinho" />
+
+    <EditText
+        android:id="@+id/etChuteJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="@dimen/espacamento_campos"
+        android:layout_marginBottom="@dimen/espacamento_campos"
+        android:hint="@string/informe" />
+
+    <Button
+        android:text="@string/chutar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="chutar"
+         />
+
+    <TextView
+        android:id="@+id/tvUltimoChute"
+        android:text="@string/ltimo_chute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/espacamento_campos"
+        android:paddingBottom="@dimen/espacamento_campos"
+          />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamanho_chute"
+        android:gravity="center"
+        tools:text="9"
+        />
+
+</LinearLayout>
