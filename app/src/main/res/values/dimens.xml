@@ -5,4 +5,7 @@
     <dimen name="padding_default">16dp</dimen>
     <dimen name="espacamento_campos">20dp</dimen>
     <dimen name="tamanho_chute">110sp</dimen>
+    <dimen name="imgLargura">250dp</dimen>
+    <dimen name="imgAlgura">150dp</dimen>
+
 </resources>
