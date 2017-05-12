@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -9,45 +9,98 @@
     tools:context="com.essejose.adivinhador.MainActivity">
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:src="@drawable/doutor_estranho"
-        android:scaleType="fitEnd"
-        android:contentDescription="@string/imagem_do_adivinho" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/ltimo_chute"
+        android:textAlignment="center"
+        android:visibility="invisible" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/nAcertosTxt"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:paddingBottom="@dimen/espacamento_campos"
+        android:paddingTop="@dimen/espacamento_campos"
+        android:text="Acertos"
+        android:visibility="invisible"
+        android:layout_below="@+id/tvUltimoChute"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/tvUltimoChute"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        tools:text="9"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/nAcertos"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        tools:text="9"
+        android:layout_below="@+id/nAcertosTxt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:id="@+id/etChuteJogador"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/informe"
         android:inputType="number"
-        android:layout_marginTop="@dimen/espacamento_campos"
-        android:layout_marginBottom="@dimen/espacamento_campos"
-        android:hint="@string/informe" />
+        android:layout_below="@+id/nAcertos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxLength="99"
+        android:layout_marginTop="24dp" />
 
     <Button
-        android:text="@string/chutar"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="chutar"
-         />
+        android:text="@string/chutar"
+        android:layout_below="@+id/etChuteJogador"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imagePrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:contentDescription="@string/imagem_do_adivinho"
+        android:scaleType="centerInside"
+        android:src="@drawable/doutor_estranho"
+        android:layout_above="@+id/etChuteJogador"
+        android:layout_below="@+id/textView" />
 
     <TextView
-        android:id="@+id/tvUltimoChute"
-        android:text="@string/ltimo_chute"
-        android:layout_width="match_parent"
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/espacamento_campos"
-        android:paddingBottom="@dimen/espacamento_campos"
-          />
+        android:text="Adivinhe um numero de 0 a 10"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <TextView
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/tamanho_chute"
-        android:gravity="center"
-        tools:text="9"
-        />
-
-</LinearLayout>
+</RelativeLayout>

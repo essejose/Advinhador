@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private final int SPLASH_DISPLAY_LENGTH = 3500;
+    private final int SPLASH_DISPLAY_LENGTH = 4500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -4,8 +4,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="padding_default">16dp</dimen>
     <dimen name="espacamento_campos">20dp</dimen>
-    <dimen name="tamanho_chute">110sp</dimen>
-    <dimen name="imgLargura">250dp</dimen>
+    <dimen name="tamanho_chute">70sp</dimen>
+    <dimen name="imgLargura">292dp</dimen>
     <dimen name="imgAlgura">150dp</dimen>
 
 </resources>
